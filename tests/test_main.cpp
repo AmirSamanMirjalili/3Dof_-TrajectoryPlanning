@@ -1,17 +1,22 @@
 #include <iostream>
-#include "other_classes.h"
+#include "functions.h"
+#include <gtest/gtest.h>
 
-int main() {
-    // Run tests here
+
+ TEST(AddTest, HandlesPositiveInput) {
+    EXPECT_EQ(2, add(1, 1));
+}
+
+int main(int argc, char **argv) {
+
+    //Run Test
     std::cout << "Running tests..." << std::endl;
 
     // Create instances of other classes and test their methods
-    OtherClass otherClass;
-    otherClass.someMethod();
+    ::testing::InitGoogleTest(&argc, argv);
+     // Add more tests here
 
-    // Add more tests here
-
-    std::cout << "All tests passed!" << std::endl;
-
-    return 0;
+    return RUN_ALL_TESTS();
 }
+
+   

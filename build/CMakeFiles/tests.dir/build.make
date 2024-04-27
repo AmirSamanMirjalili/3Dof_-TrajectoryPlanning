@@ -109,6 +109,9 @@ tests: CMakeFiles/tests.dir/tests/test_main.cpp.o
 tests: CMakeFiles/tests.dir/src/main.cpp.o
 tests: CMakeFiles/tests.dir/src/other_classes.cpp.o
 tests: CMakeFiles/tests.dir/build.make
+tests: lib/libgtest.a
+tests: lib/libgtest_main.a
+tests: lib/libgtest.a
 tests: CMakeFiles/tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)

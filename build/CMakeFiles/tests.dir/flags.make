@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++2a
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/include 
+CXX_INCLUDES = -I/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/include -isystem /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/lib/googletest/googletest/include -isystem /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/lib/googletest/googletest 
 

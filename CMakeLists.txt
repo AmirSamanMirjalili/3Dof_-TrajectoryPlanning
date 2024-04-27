@@ -29,8 +29,9 @@ add_executable(tests tests/test_main.cpp ${SOURCES} ${HEADERS})
 target_include_directories(tests PUBLIC include)
 
 # link Google Test to the test executable
+add_subdirectory(lib/googletest)
 target_link_libraries(tests gtest gtest_main)
-
+target_include_directories(tests PUBLIC ${CMAKE_SOURCE_DIR}/lib/googletest/googletest/include)
 # Add test command
 enable_testing()
 add_test(NAME my-cpp-project-tests COMMAND tests)
