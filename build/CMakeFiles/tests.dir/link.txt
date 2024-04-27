@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/tests.dir/tests/test_main.cpp.o CMakeFiles/tests.dir/src/main.cpp.o CMakeFiles/tests.dir/src/other_classes.cpp.o  -o tests  -lgtest -lgtest_main 

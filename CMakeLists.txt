@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.16.3)
 project(my-cpp-project)
 
 # Set C++ standard
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add source files
@@ -17,10 +17,10 @@ set(HEADERS
 )
 
 # Add executable target
-add_executable(my-cpp-project ${SOURCES} ${HEADERS})
+add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 
 # Add include directories
-target_include_directories(my-cpp-project PUBLIC include)
+target_include_directories(${PROJECT_NAME} PUBLIC include)
 
 # Add test executable target
 add_executable(tests tests/test_main.cpp ${SOURCES} ${HEADERS})
@@ -28,8 +28,8 @@ add_executable(tests tests/test_main.cpp ${SOURCES} ${HEADERS})
 # Add test include directories
 target_include_directories(tests PUBLIC include)
 
-# Add test libraries or dependencies if needed
-# target_link_libraries(tests <library_name>)
+# link Google Test to the test executable
+target_link_libraries(tests gtest gtest_main)
 
 # Add test command
 enable_testing()

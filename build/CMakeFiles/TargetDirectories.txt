@@ -1,0 +1,5 @@
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/rebuild_cache.dir
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/edit_cache.dir
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/test.dir
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/tests.dir
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/my-cpp-project.dir
