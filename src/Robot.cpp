@@ -31,8 +31,12 @@ void Robot::setTargetPosition(Vec3& targetPosition)
 
 void Robot::updatePosition() {
 
+    isAtTarget();
 
-    if (atTarget) return;
+    if(atTarget)
+    {
+        return;
+    }
 
     // Calculate the direction of the robot which is heading towards the target
     Vec3 direction = this->unitDirection;
@@ -53,8 +57,8 @@ void Robot::printPosition() const {
 
 bool Robot::isAtTarget()  {
 
-    atTarget=false;
-    const double epsilon = 1e-6;
+    atTarget= false;
+    double epsilon = 1e-6;
     Vec3 error = targetPosition - position;
 
     // If the robot is within epsilon distance of the target, return true
