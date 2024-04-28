@@ -52,3 +52,19 @@ void Robot::updatePosition() {
     
 }
 
+void Robot::printPosition() const {
+
+    std::cout << "Robot Position: " << position << std::endl;
+}
+
+bool Robot::isAtTarget() const {
+
+    const double epsilon = 1e-6;
+    Vec3 error = targetPosition - position;
+
+    // If the robot is within epsilon distance of the target, return true
+    if (error.magnitude() < epsilon) {
+        return true;
+    }
+}
+
