@@ -1,9 +1,5 @@
 #include "Robot.h"
-#include "../include/Vec3.h"
-#include "gtest/gtest.h"
-
-
-
+    #include "gtest/gtest.h"
 
 
 TEST(RobotConstructor, InitializesCorrectly) {
@@ -53,4 +49,11 @@ TEST(RobotConstructor, InitializesCorrectly) {
      Vec3 a(1, 2, 3);
      Vec3 b(1, 2, 3);
      EXPECT_EQ(a, b);
+ }
+
+ TEST(Vec3Test,normailize) {
+     Vec3 v(1.0, 2.0, 3.0);
+     Vec3 result = v.normalize();
+     double magnitude = result.magnitude();
+     EXPECT_DOUBLE_EQ(magnitude, 1.0);
  }

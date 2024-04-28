@@ -16,7 +16,7 @@ public:
     //Setter Methods
     void setTargetPosition(Vec3& targetPosition);
     
-    // utility methods
+    // utility Methods
     void updatePosition();
     bool isAtTarget() const;
     void printPosition() const;
@@ -25,8 +25,10 @@ public:
 private:
     Vec3 position;
     Vec3 targetPosition;
+    Vec3 unitDirection;
     int maxVelocity;
     double timeStep;
+    
 };
 
 
