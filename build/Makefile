@@ -245,35 +245,35 @@ gtest/fast:
 	$(MAKE) -f lib/googletest/googletest/CMakeFiles/gtest.dir/build.make lib/googletest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-src/functions.o: src/functions.cpp.o
+src/Robot.o: src/Robot.cpp.o
 
-.PHONY : src/functions.o
+.PHONY : src/Robot.o
 
 # target to build an object file
-src/functions.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/functions.cpp.o
-	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/functions.cpp.o
-.PHONY : src/functions.cpp.o
+src/Robot.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Robot.cpp.o
+	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/Robot.cpp.o
+.PHONY : src/Robot.cpp.o
 
-src/functions.i: src/functions.cpp.i
+src/Robot.i: src/Robot.cpp.i
 
-.PHONY : src/functions.i
+.PHONY : src/Robot.i
 
 # target to preprocess a source file
-src/functions.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/functions.cpp.i
-	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/functions.cpp.i
-.PHONY : src/functions.cpp.i
+src/Robot.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Robot.cpp.i
+	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/Robot.cpp.i
+.PHONY : src/Robot.cpp.i
 
-src/functions.s: src/functions.cpp.s
+src/Robot.s: src/Robot.cpp.s
 
-.PHONY : src/functions.s
+.PHONY : src/Robot.s
 
 # target to generate assembly for a file
-src/functions.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/functions.cpp.s
-	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/functions.cpp.s
-.PHONY : src/functions.cpp.s
+src/Robot.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Robot.cpp.s
+	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/Robot.cpp.s
+.PHONY : src/Robot.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -302,63 +302,6 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/other_classes.o: src/other_classes.cpp.o
-
-.PHONY : src/other_classes.o
-
-# target to build an object file
-src/other_classes.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/other_classes.cpp.o
-	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/other_classes.cpp.o
-.PHONY : src/other_classes.cpp.o
-
-src/other_classes.i: src/other_classes.cpp.i
-
-.PHONY : src/other_classes.i
-
-# target to preprocess a source file
-src/other_classes.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/other_classes.cpp.i
-	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/other_classes.cpp.i
-.PHONY : src/other_classes.cpp.i
-
-src/other_classes.s: src/other_classes.cpp.s
-
-.PHONY : src/other_classes.s
-
-# target to generate assembly for a file
-src/other_classes.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/other_classes.cpp.s
-	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/other_classes.cpp.s
-.PHONY : src/other_classes.cpp.s
-
-tests/test_functions.o: tests/test_functions.cpp.o
-
-.PHONY : tests/test_functions.o
-
-# target to build an object file
-tests/test_functions.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_functions.cpp.o
-.PHONY : tests/test_functions.cpp.o
-
-tests/test_functions.i: tests/test_functions.cpp.i
-
-.PHONY : tests/test_functions.i
-
-# target to preprocess a source file
-tests/test_functions.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_functions.cpp.i
-.PHONY : tests/test_functions.cpp.i
-
-tests/test_functions.s: tests/test_functions.cpp.s
-
-.PHONY : tests/test_functions.s
-
-# target to generate assembly for a file
-tests/test_functions.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_functions.cpp.s
-.PHONY : tests/test_functions.cpp.s
-
 tests/test_main.o: tests/test_main.cpp.o
 
 .PHONY : tests/test_main.o
@@ -386,6 +329,33 @@ tests/test_main.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_main.cpp.s
 .PHONY : tests/test_main.cpp.s
 
+tests/test_robot.o: tests/test_robot.cpp.o
+
+.PHONY : tests/test_robot.o
+
+# target to build an object file
+tests/test_robot.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_robot.cpp.o
+.PHONY : tests/test_robot.cpp.o
+
+tests/test_robot.i: tests/test_robot.cpp.i
+
+.PHONY : tests/test_robot.i
+
+# target to preprocess a source file
+tests/test_robot.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_robot.cpp.i
+.PHONY : tests/test_robot.cpp.i
+
+tests/test_robot.s: tests/test_robot.cpp.s
+
+.PHONY : tests/test_robot.s
+
+# target to generate assembly for a file
+tests/test_robot.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_robot.cpp.s
+.PHONY : tests/test_robot.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -405,21 +375,18 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... src/functions.o"
-	@echo "... src/functions.i"
-	@echo "... src/functions.s"
+	@echo "... src/Robot.o"
+	@echo "... src/Robot.i"
+	@echo "... src/Robot.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/other_classes.o"
-	@echo "... src/other_classes.i"
-	@echo "... src/other_classes.s"
-	@echo "... tests/test_functions.o"
-	@echo "... tests/test_functions.i"
-	@echo "... tests/test_functions.s"
 	@echo "... tests/test_main.o"
 	@echo "... tests/test_main.i"
 	@echo "... tests/test_main.s"
+	@echo "... tests/test_robot.o"
+	@echo "... tests/test_robot.i"
+	@echo "... tests/test_robot.s"
 .PHONY : help
 
 

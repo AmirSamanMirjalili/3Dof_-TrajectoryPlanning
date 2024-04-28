@@ -57,22 +57,9 @@ include CMakeFiles/tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tests.dir/flags.make
 
-CMakeFiles/tests.dir/tests/test_functions.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/tests/test_functions.cpp.o: ../tests/test_functions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/tests/test_functions.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/tests/test_functions.cpp.o -c /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/tests/test_functions.cpp
-
-CMakeFiles/tests.dir/tests/test_functions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/test_functions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/tests/test_functions.cpp > CMakeFiles/tests.dir/tests/test_functions.cpp.i
-
-CMakeFiles/tests.dir/tests/test_functions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/test_functions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/tests/test_functions.cpp -o CMakeFiles/tests.dir/tests/test_functions.cpp.s
-
 CMakeFiles/tests.dir/tests/test_main.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/tests/test_main.cpp.o: ../tests/test_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests.dir/tests/test_main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/tests/test_main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/tests/test_main.cpp.o -c /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/tests/test_main.cpp
 
 CMakeFiles/tests.dir/tests/test_main.cpp.i: cmake_force
@@ -83,52 +70,50 @@ CMakeFiles/tests.dir/tests/test_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/test_main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/tests/test_main.cpp -o CMakeFiles/tests.dir/tests/test_main.cpp.s
 
-CMakeFiles/tests.dir/src/functions.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/src/functions.cpp.o: ../src/functions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tests.dir/src/functions.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/src/functions.cpp.o -c /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/functions.cpp
+CMakeFiles/tests.dir/tests/test_robot.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/tests/test_robot.cpp.o: ../tests/test_robot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests.dir/tests/test_robot.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/tests/test_robot.cpp.o -c /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/tests/test_robot.cpp
 
-CMakeFiles/tests.dir/src/functions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/src/functions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/functions.cpp > CMakeFiles/tests.dir/src/functions.cpp.i
+CMakeFiles/tests.dir/tests/test_robot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/test_robot.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/tests/test_robot.cpp > CMakeFiles/tests.dir/tests/test_robot.cpp.i
 
-CMakeFiles/tests.dir/src/functions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/src/functions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/functions.cpp -o CMakeFiles/tests.dir/src/functions.cpp.s
+CMakeFiles/tests.dir/tests/test_robot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/test_robot.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/tests/test_robot.cpp -o CMakeFiles/tests.dir/tests/test_robot.cpp.s
 
-CMakeFiles/tests.dir/src/other_classes.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/src/other_classes.cpp.o: ../src/other_classes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tests.dir/src/other_classes.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/src/other_classes.cpp.o -c /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/other_classes.cpp
+CMakeFiles/tests.dir/src/Robot.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/src/Robot.cpp.o: ../src/Robot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tests.dir/src/Robot.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/src/Robot.cpp.o -c /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/Robot.cpp
 
-CMakeFiles/tests.dir/src/other_classes.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/src/other_classes.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/other_classes.cpp > CMakeFiles/tests.dir/src/other_classes.cpp.i
+CMakeFiles/tests.dir/src/Robot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/src/Robot.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/Robot.cpp > CMakeFiles/tests.dir/src/Robot.cpp.i
 
-CMakeFiles/tests.dir/src/other_classes.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/src/other_classes.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/other_classes.cpp -o CMakeFiles/tests.dir/src/other_classes.cpp.s
+CMakeFiles/tests.dir/src/Robot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/src/Robot.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/Robot.cpp -o CMakeFiles/tests.dir/src/Robot.cpp.s
 
 # Object files for target tests
 tests_OBJECTS = \
-"CMakeFiles/tests.dir/tests/test_functions.cpp.o" \
 "CMakeFiles/tests.dir/tests/test_main.cpp.o" \
-"CMakeFiles/tests.dir/src/functions.cpp.o" \
-"CMakeFiles/tests.dir/src/other_classes.cpp.o"
+"CMakeFiles/tests.dir/tests/test_robot.cpp.o" \
+"CMakeFiles/tests.dir/src/Robot.cpp.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
-tests: CMakeFiles/tests.dir/tests/test_functions.cpp.o
 tests: CMakeFiles/tests.dir/tests/test_main.cpp.o
-tests: CMakeFiles/tests.dir/src/functions.cpp.o
-tests: CMakeFiles/tests.dir/src/other_classes.cpp.o
+tests: CMakeFiles/tests.dir/tests/test_robot.cpp.o
+tests: CMakeFiles/tests.dir/src/Robot.cpp.o
 tests: CMakeFiles/tests.dir/build.make
 tests: lib/libgtest.a
 tests: lib/libgtest_main.a
 tests: lib/libgtest.a
 tests: CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

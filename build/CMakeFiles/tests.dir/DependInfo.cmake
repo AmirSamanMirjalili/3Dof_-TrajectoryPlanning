@@ -4,10 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/functions.cpp" "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/tests.dir/src/functions.cpp.o"
-  "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/other_classes.cpp" "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/tests.dir/src/other_classes.cpp.o"
-  "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/tests/test_functions.cpp" "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/tests.dir/tests/test_functions.cpp.o"
+  "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/Robot.cpp" "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/tests.dir/src/Robot.cpp.o"
   "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/tests/test_main.cpp" "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/tests.dir/tests/test_main.cpp.o"
+  "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/tests/test_robot.cpp" "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/tests.dir/tests/test_robot.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
