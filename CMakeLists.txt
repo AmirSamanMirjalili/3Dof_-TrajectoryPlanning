@@ -5,33 +5,28 @@ project(my-cpp-project)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Add source files
-set(SOURCES
-    src/main.cpp
-    src/other_classes.cpp
-)
+# Include directories
+include_directories(include)
 
-# Add header files
-set(HEADERS
-    include/other_classes.h
-)
+# Globbing source files for the main application
+file(GLOB MAIN_SOURCES "src/*.cpp")
+list(REMOVE_ITEM MAIN_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp")
 
-# Add executable target
-add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+# Globbing source files for tests
+file(GLOB TEST_SOURCES "tests/*.cpp")
+list(APPEND TEST_SOURCES ${MAIN_SOURCES})
 
-# Add include directories
-target_include_directories(${PROJECT_NAME} PUBLIC include)
+# Add executable for the main application
+add_executable(${PROJECT_NAME} src/main.cpp ${MAIN_SOURCES})
 
-# Add test executable target
-add_executable(tests tests/test_main.cpp ${SOURCES} ${HEADERS})
+# Add executable for tests
+add_executable(tests ${TEST_SOURCES})
 
-# Add test include directories
-target_include_directories(tests PUBLIC include)
-
-# link Google Test to the test executable
+# Link Google Test to the test executable
 add_subdirectory(lib/googletest)
 target_link_libraries(tests gtest gtest_main)
 target_include_directories(tests PUBLIC ${CMAKE_SOURCE_DIR}/lib/googletest/googletest/include)
+
 # Add test command
 enable_testing()
 add_test(NAME my-cpp-project-tests COMMAND tests)

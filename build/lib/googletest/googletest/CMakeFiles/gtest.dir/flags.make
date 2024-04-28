@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREA
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/lib/googletest/googletest/include -I/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/lib/googletest/googletest 
+CXX_INCLUDES = -I/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/include -I/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/lib/googletest/googletest/include -I/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/lib/googletest/googletest 
 

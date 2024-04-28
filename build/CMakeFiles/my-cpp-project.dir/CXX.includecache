@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/functions.h
+
+../include/other_classes.h
+
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/functions.cpp
+functions.h
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/functions.h
+
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/main.cpp
+iostream
+-
+
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/other_classes.cpp
+other_classes.h
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/other_classes.h
+

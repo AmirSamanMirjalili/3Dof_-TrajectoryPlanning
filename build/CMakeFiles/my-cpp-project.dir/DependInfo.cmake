@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/functions.cpp" "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/my-cpp-project.dir/src/functions.cpp.o"
   "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/main.cpp" "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/my-cpp-project.dir/src/main.cpp.o"
   "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/other_classes.cpp" "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles/my-cpp-project.dir/src/other_classes.cpp.o"
   )

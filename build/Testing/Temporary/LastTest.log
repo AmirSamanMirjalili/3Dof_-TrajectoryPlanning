@@ -1,0 +1,30 @@
+Start testing: Apr 28 02:04 +0330
+----------------------------------------------------------
+1/1 Testing: my-cpp-project-tests
+1/1 Test: my-cpp-project-tests
+Command: "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/tests"
+Directory: /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build
+"my-cpp-project-tests" start time: Apr 28 02:04 +0330
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from MathTest
+[ RUN      ] MathTest.HandlesZeroInput
+[       OK ] MathTest.HandlesZeroInput (0 ms)
+[ RUN      ] MathTest.HandlesPositiveInput
+[       OK ] MathTest.HandlesPositiveInput (0 ms)
+[----------] 2 tests from MathTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"my-cpp-project-tests" end time: Apr 28 02:04 +0330
+"my-cpp-project-tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 28 02:04 +0330

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/my-cpp-project.dir/src/functions.cpp.o"
   "CMakeFiles/my-cpp-project.dir/src/main.cpp.o"
   "CMakeFiles/my-cpp-project.dir/src/other_classes.cpp.o"
   "my-cpp-project"

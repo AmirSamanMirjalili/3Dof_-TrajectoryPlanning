@@ -245,13 +245,42 @@ gtest/fast:
 	$(MAKE) -f lib/googletest/googletest/CMakeFiles/gtest.dir/build.make lib/googletest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+src/functions.o: src/functions.cpp.o
+
+.PHONY : src/functions.o
+
+# target to build an object file
+src/functions.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/functions.cpp.o
+	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/functions.cpp.o
+.PHONY : src/functions.cpp.o
+
+src/functions.i: src/functions.cpp.i
+
+.PHONY : src/functions.i
+
+# target to preprocess a source file
+src/functions.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/functions.cpp.i
+	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/functions.cpp.i
+.PHONY : src/functions.cpp.i
+
+src/functions.s: src/functions.cpp.s
+
+.PHONY : src/functions.s
+
+# target to generate assembly for a file
+src/functions.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/functions.cpp.s
+	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/functions.cpp.s
+.PHONY : src/functions.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/main.cpp.o
 	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
@@ -261,7 +290,6 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/main.cpp.i
 	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
@@ -271,7 +299,6 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/main.cpp.s
 	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
@@ -304,6 +331,33 @@ src/other_classes.cpp.s:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/other_classes.cpp.s
 	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/other_classes.cpp.s
 .PHONY : src/other_classes.cpp.s
+
+tests/test_functions.o: tests/test_functions.cpp.o
+
+.PHONY : tests/test_functions.o
+
+# target to build an object file
+tests/test_functions.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_functions.cpp.o
+.PHONY : tests/test_functions.cpp.o
+
+tests/test_functions.i: tests/test_functions.cpp.i
+
+.PHONY : tests/test_functions.i
+
+# target to preprocess a source file
+tests/test_functions.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_functions.cpp.i
+.PHONY : tests/test_functions.cpp.i
+
+tests/test_functions.s: tests/test_functions.cpp.s
+
+.PHONY : tests/test_functions.s
+
+# target to generate assembly for a file
+tests/test_functions.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_functions.cpp.s
+.PHONY : tests/test_functions.cpp.s
 
 tests/test_main.o: tests/test_main.cpp.o
 
@@ -351,12 +405,18 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... src/functions.o"
+	@echo "... src/functions.i"
+	@echo "... src/functions.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/other_classes.o"
 	@echo "... src/other_classes.i"
 	@echo "... src/other_classes.s"
+	@echo "... tests/test_functions.o"
+	@echo "... tests/test_functions.i"
+	@echo "... tests/test_functions.s"
 	@echo "... tests/test_main.o"
 	@echo "... tests/test_main.i"
 	@echo "... tests/test_main.s"
