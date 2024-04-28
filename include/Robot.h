@@ -18,7 +18,7 @@ public:
     
     // utility Methods
     void updatePosition();
-    bool isAtTarget() const;
+    bool isAtTarget() ;
     void printPosition() const;
 
 
@@ -29,6 +29,7 @@ private:
     Vec3 unitDirection;
     int maxVelocity;
     double timeStep;
+    bool atTarget;
     
 };
 

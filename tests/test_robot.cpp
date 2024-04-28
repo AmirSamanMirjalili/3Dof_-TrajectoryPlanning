@@ -34,6 +34,23 @@ TEST(RobotClass, UpdatePosition) {
     EXPECT_EQ(actualPosition, expectedPosition);
 }
 
+TEST(RobotClass, isAtTarget) {
+    // Arrange
+    Vec3 initialPosition(0, 0, 0);
+    Vec3 targetPosition(0, 2, 0);
+    int maxVelocity = 2;
+    double timeStep = 1.0;
+    Robot robot(initialPosition, maxVelocity, timeStep);
+    robot.setTargetPosition(targetPosition);
+
+    // Act
+    robot.updatePosition();
+
+    // Assert
+    EXPECT_TRUE(robot.isAtTarget());
+   
+}
+
  TEST(Vec3Test, Addition) {
      Vec3 v1(1.0, 2.0, 3.0);
      Vec3 v2(4.0, 5.0, 6.0);

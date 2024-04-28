@@ -31,14 +31,8 @@ void Robot::setTargetPosition(Vec3& targetPosition)
 
 void Robot::updatePosition() {
 
-    const double epsilon = 1e-6;
-    Vec3 error = targetPosition - position;
 
-    // If the robot is within epsilon distance of the target, just move it to the target
-    if (error.magnitude() < epsilon) {
-        position = targetPosition;
-        return;
-    }
+    if (atTarget) return;
 
     // Calculate the direction of the robot which is heading towards the target
     Vec3 direction = this->unitDirection;
@@ -49,7 +43,7 @@ void Robot::updatePosition() {
 
     // move the robot to the new position
     position = position + displacement;
-    
+
 }
 
 void Robot::printPosition() const {
@@ -57,13 +51,15 @@ void Robot::printPosition() const {
     std::cout << "Robot Position: " << position << std::endl;
 }
 
-bool Robot::isAtTarget() const {
+bool Robot::isAtTarget()  {
 
+    atTarget=false;
     const double epsilon = 1e-6;
     Vec3 error = targetPosition - position;
 
     // If the robot is within epsilon distance of the target, return true
     if (error.magnitude() < epsilon) {
+        atTarget = true;
         return true;
     }
 }
