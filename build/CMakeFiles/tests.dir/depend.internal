@@ -4,6 +4,9 @@
 CMakeFiles/tests.dir/src/Robot.cpp.o
  ../include/Robot.h
  /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/Robot.cpp
+CMakeFiles/tests.dir/src/Vec3.cpp.o
+ ../include/Vec3.h
+ /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/Vec3.cpp
 CMakeFiles/tests.dir/tests/test_main.cpp.o
  ../lib/googletest/googletest/include/gtest/gtest-assertion-result.h
  ../lib/googletest/googletest/include/gtest/gtest-death-test.h

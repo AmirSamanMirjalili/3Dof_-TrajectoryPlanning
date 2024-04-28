@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
-../include/Robot.h
-vector
+../include/Vec3.h
+cmath
+-
+iostream
 -
 
-/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/Robot.cpp
-Robot.h
-/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/Robot.h
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/Vec3.cpp
+Vec3.h
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/Vec3.h
 

@@ -2,7 +2,7 @@
 #include "Robot.h"
 
 TEST(RobotConstructor, InitializesCorrectly) {
-    std::vector<int> initialPosition = {0,0,0};
+    std::vector<double> initialPosition = {0,0,0};
     int maxVelocity {10};
     int timeStep {1};
 

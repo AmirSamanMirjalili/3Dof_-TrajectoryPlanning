@@ -139,12 +139,12 @@ CMakeFiles/tests.dir/all: lib/googletest/googletest/CMakeFiles/gtest_main.dir/al
 CMakeFiles/tests.dir/all: lib/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=12,13,14,15 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=13,14,15,16,17 "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
@@ -166,12 +166,12 @@ CMakeFiles/tests.dir/clean:
 CMakeFiles/my-cpp-project.dir/all:
 	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/depend
 	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=9,10,11 "Built target my-cpp-project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=9,10,11,12 "Built target my-cpp-project"
 .PHONY : CMakeFiles/my-cpp-project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/my-cpp-project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/my-cpp-project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles 0
 .PHONY : CMakeFiles/my-cpp-project.dir/rule
@@ -190,8 +190,8 @@ CMakeFiles/my-cpp-project.dir/clean:
 # Target rules for target lib/googletest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-lib/googletest/googlemock/CMakeFiles/gmock_main.dir/all: lib/googletest/googletest/CMakeFiles/gtest.dir/all
 lib/googletest/googlemock/CMakeFiles/gmock_main.dir/all: lib/googletest/googlemock/CMakeFiles/gmock.dir/all
+lib/googletest/googlemock/CMakeFiles/gmock_main.dir/all: lib/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/CMakeFiles --progress-num=3,4 "Built target gmock_main"

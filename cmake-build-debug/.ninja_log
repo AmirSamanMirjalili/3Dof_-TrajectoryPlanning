@@ -1,0 +1,14 @@
+# ninja log v5
+0	329	1714313977509251322	CMakeFiles/my-cpp-project.dir/src/Robot.cpp.o	fc47924bead1093a
+0	414	1714313977593252424	CMakeFiles/my-cpp-project.dir/src/main.cpp.o	7b45742fa8315770
+0	541	1714313977721254104	CMakeFiles/my-cpp-project.dir/src/Vec3.cpp.o	990e2838b9865f9a
+541	634	1714313977813255311	my-cpp-project	c04e3f86b469b3bf
+2	814	1714314010997686759	CMakeFiles/tests.dir/src/Robot.cpp.o	b096f6a8f3cd4227
+5	990	1714314011173689026	CMakeFiles/tests.dir/src/Vec3.cpp.o	35c749e0187c7f8d
+0	2109	1714314012293703453	CMakeFiles/tests.dir/tests/test_main.cpp.o	7e5e8a73047c94d3
+10	2234	1714314012417705049	lib/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	d2ba15331c68845b
+1	2546	1714314012729709066	CMakeFiles/tests.dir/tests/test_robot.cpp.o	38f5e4d95501e140
+7	6803	1714314016981763745	lib/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	936c3adc9d31128
+6803	6868	1714314017049764619	lib/libgtest.a	7c04854cb3946bf5
+6868	6893	1714314017061764772	lib/libgtest_main.a	2372e6830f576769
+6893	7138	1714314017321768112	tests	6e42d051e2688d68

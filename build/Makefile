@@ -275,6 +275,36 @@ src/Robot.cpp.s:
 	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/Robot.cpp.s
 .PHONY : src/Robot.cpp.s
 
+src/Vec3.o: src/Vec3.cpp.o
+
+.PHONY : src/Vec3.o
+
+# target to build an object file
+src/Vec3.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Vec3.cpp.o
+	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/Vec3.cpp.o
+.PHONY : src/Vec3.cpp.o
+
+src/Vec3.i: src/Vec3.cpp.i
+
+.PHONY : src/Vec3.i
+
+# target to preprocess a source file
+src/Vec3.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Vec3.cpp.i
+	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/Vec3.cpp.i
+.PHONY : src/Vec3.cpp.i
+
+src/Vec3.s: src/Vec3.cpp.s
+
+.PHONY : src/Vec3.s
+
+# target to generate assembly for a file
+src/Vec3.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/Vec3.cpp.s
+	$(MAKE) -f CMakeFiles/my-cpp-project.dir/build.make CMakeFiles/my-cpp-project.dir/src/Vec3.cpp.s
+.PHONY : src/Vec3.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -378,6 +408,9 @@ help:
 	@echo "... src/Robot.o"
 	@echo "... src/Robot.i"
 	@echo "... src/Robot.s"
+	@echo "... src/Vec3.o"
+	@echo "... src/Vec3.i"
+	@echo "... src/Vec3.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

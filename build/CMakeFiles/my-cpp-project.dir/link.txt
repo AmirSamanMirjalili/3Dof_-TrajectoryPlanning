@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/my-cpp-project.dir/src/main.cpp.o CMakeFiles/my-cpp-project.dir/src/Robot.cpp.o  -o my-cpp-project 
+/usr/bin/c++     CMakeFiles/my-cpp-project.dir/src/main.cpp.o CMakeFiles/my-cpp-project.dir/src/Robot.cpp.o CMakeFiles/my-cpp-project.dir/src/Vec3.cpp.o  -o my-cpp-project 

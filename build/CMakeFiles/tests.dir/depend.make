@@ -4,6 +4,9 @@
 CMakeFiles/tests.dir/src/Robot.cpp.o: ../include/Robot.h
 CMakeFiles/tests.dir/src/Robot.cpp.o: ../src/Robot.cpp
 
+CMakeFiles/tests.dir/src/Vec3.cpp.o: ../include/Vec3.h
+CMakeFiles/tests.dir/src/Vec3.cpp.o: ../src/Vec3.cpp
+
 CMakeFiles/tests.dir/tests/test_main.cpp.o: ../lib/googletest/googletest/include/gtest/gtest-assertion-result.h
 CMakeFiles/tests.dir/tests/test_main.cpp.o: ../lib/googletest/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/tests.dir/tests/test_main.cpp.o: ../lib/googletest/googletest/include/gtest/gtest-matchers.h
