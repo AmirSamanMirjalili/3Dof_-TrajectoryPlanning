@@ -1,8 +1,8 @@
 #include "Robot.h"
-    #include "gtest/gtest.h"
+#include "gtest/gtest.h"
 
 
-TEST(RobotConstructor, InitializesCorrectly) {
+TEST(RobotClass, InitializesCorrectly) {
     Vec3 initialPosition(0,0,0);
     int maxVelocity {10};
     double timeStep {1};
@@ -15,6 +15,24 @@ TEST(RobotConstructor, InitializesCorrectly) {
     
 }
 
+
+TEST(RobotClass, UpdatePosition) {
+    // Arrange
+    Vec3 initialPosition(0, 0, 0);
+    Vec3 targetPosition(0, 10, 0);
+    int maxVelocity = 2;
+    double timeStep = 1.0;
+    Robot robot(initialPosition, maxVelocity, timeStep);
+    robot.setTargetPosition(targetPosition);
+
+    // Act
+    robot.updatePosition();
+
+    // Assert
+    Vec3 expectedPosition(0, 2, 0); // The robot should have moved 2 units along the x-axis
+    Vec3 actualPosition = robot.getPosition();
+    EXPECT_EQ(actualPosition, expectedPosition);
+}
 
  TEST(Vec3Test, Addition) {
      Vec3 v1(1.0, 2.0, 3.0);

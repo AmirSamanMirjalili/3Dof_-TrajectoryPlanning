@@ -24,6 +24,7 @@ public:
 
 private:
     Vec3 position;
+    Vec3 initialPosition;
     Vec3 targetPosition;
     Vec3 unitDirection;
     int maxVelocity;

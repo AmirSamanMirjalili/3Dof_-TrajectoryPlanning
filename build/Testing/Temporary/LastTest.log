@@ -1,0 +1,43 @@
+Start testing: Apr 28 20:50 +0330
+----------------------------------------------------------
+1/1 Testing: my-cpp-project-tests
+1/1 Test: my-cpp-project-tests
+Command: "/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build/tests"
+Directory: /home/amir/Programming/CppTest/LIRM_project/simple_2d_object/build
+"my-cpp-project-tests" start time: Apr 28 20:50 +0330
+Output:
+----------------------------------------------------------
+[==========] Running 7 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from RobotClass
+[ RUN      ] RobotClass.InitializesCorrectly
+[       OK ] RobotClass.InitializesCorrectly (0 ms)
+[ RUN      ] RobotClass.UpdatePosition
+[       OK ] RobotClass.UpdatePosition (0 ms)
+[----------] 2 tests from RobotClass (0 ms total)
+
+[----------] 5 tests from Vec3Test
+[ RUN      ] Vec3Test.Addition
+[       OK ] Vec3Test.Addition (0 ms)
+[ RUN      ] Vec3Test.Subtraction
+[       OK ] Vec3Test.Subtraction (0 ms)
+[ RUN      ] Vec3Test.ScalarMultiplication
+[       OK ] Vec3Test.ScalarMultiplication (0 ms)
+[ RUN      ] Vec3Test.Equality
+[       OK ] Vec3Test.Equality (0 ms)
+[ RUN      ] Vec3Test.normailize
+[       OK ] Vec3Test.normailize (0 ms)
+[----------] 5 tests from Vec3Test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 2 test suites ran. (0 ms total)
+[  PASSED  ] 7 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"my-cpp-project-tests" end time: Apr 28 20:50 +0330
+"my-cpp-project-tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 28 20:50 +0330

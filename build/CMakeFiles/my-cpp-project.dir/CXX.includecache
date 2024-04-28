@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Robot.h
+cmath
+-
+Vec3.h
+../include/Vec3.h
+
+../include/Vec3.h
+cmath
+-
+iostream
+-
+
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/Robot.cpp
+Robot.h
+/home/amir/Programming/CppTest/LIRM_project/simple_2d_object/src/Robot.h
+
