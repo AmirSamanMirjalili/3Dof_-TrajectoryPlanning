@@ -1,20 +1,20 @@
 #pragma once
-#include <vector>
 #include <cmath> // For sqrt function
+#include "Vec3.h"
 
 
 class Robot
 {
 public:
-    Robot(const std::vector<double>& initialPosition, int maxVelocity,int timeStep);  //constructor
+    Robot(const Vec3& initialPosition, int maxVelocity,double timeStep);  //constructor
     
     //Getter Methods
-    std::vector<double> getPosition() const;
+    Vec3 getPosition() const;
     int getmaxVelocity() const;
-    int getTimeStep() const;
+    double getTimeStep() const;
 
     //Setter Methods
-    void setTargetPosition(const std::vector<double>& targetPosition);
+    void setTargetPosition(Vec3& targetPosition);
     
     // utility methods
     void updatePosition();
@@ -23,10 +23,10 @@ public:
 
 
 private:
-    std::vector<double> position;
-    std::vector<double> targetPosition;
+    Vec3 position;
+    Vec3 targetPosition;
     int maxVelocity;
-    int timeStep;
+    double timeStep;
 };
 
 

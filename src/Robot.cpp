@@ -2,17 +2,16 @@
 
 
 //constructor
-Robot::Robot(const std::vector<double>& initialPosition,int maxVelocity,int timeStep)
-: position(initialPosition), maxVelocity(maxVelocity), timeStep(timeStep)
-{}
+Robot::Robot(const Vec3& initialPosition,int maxVelocity,double timeStep)
+: position(initialPosition),targetPosition(0, 0, 0), maxVelocity(maxVelocity), timeStep(timeStep){}
 
 //Getter Methods
-std::vector<double> Robot::getPosition() const
+Vec3 Robot::getPosition() const
 {
     return position;
 }
 
-int Robot::getTimeStep() const
+double Robot::getTimeStep() const
 {
     return timeStep;
 }
@@ -22,7 +21,7 @@ int Robot::getmaxVelocity() const
     return maxVelocity;
 }
 
-void Robot::setTargetPosition(const std::vector<double>& setTargetPosition)
+void Robot::setTargetPosition(Vec3& setTargetPosition)
 {
     this->targetPosition=targetPosition;
 }

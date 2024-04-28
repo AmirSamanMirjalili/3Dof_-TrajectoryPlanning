@@ -8,6 +8,9 @@ struct Vec3 {
     // Constructor
     Vec3(double x, double y, double z);
 
+
+    bool operator==(const Vec3& other) const;
+
     // Vector addition
     Vec3 operator+(const Vec3& other) const;
 

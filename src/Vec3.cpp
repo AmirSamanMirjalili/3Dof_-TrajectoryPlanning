@@ -35,6 +35,10 @@ Vec3 Vec3::normalize() const {
     return Vec3(x / mag, y / mag, z / mag);
 }
 
+bool Vec3::operator==(const Vec3 &other) const {
+        return x == other.x && y == other.y && z == other.z;
+}
+
 std::ostream& operator<<(std::ostream& os, const Vec3& v) {
     os << "(" << v.x << ", " << v.y << ", " << v.z << ")";
     return os;
