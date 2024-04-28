@@ -57,3 +57,5 @@ TEST(RobotConstructor, InitializesCorrectly) {
      double magnitude = result.magnitude();
      EXPECT_DOUBLE_EQ(magnitude, 1.0);
  }
+
+ 
