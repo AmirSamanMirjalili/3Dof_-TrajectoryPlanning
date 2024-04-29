@@ -23,7 +23,7 @@ This project simulates a simple 2D flying robot that translates in an environmen
 
 1. **Compile the Program**:
    Before compiling, ensure that you have CMake installed on your system. Follow these steps to compile the program:
-    bash
+    ```bash
     # Create a build directory
     mkdir -p build
     cd build
@@ -31,3 +31,5 @@ This project simulates a simple 2D flying robot that translates in an environmen
     cmake ..
     # Compile the program
     make
+    ```
+   This will generate the executable in the `build` directory.
