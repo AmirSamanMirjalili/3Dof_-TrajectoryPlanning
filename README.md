@@ -5,7 +5,7 @@
 
 This project simulates a simple 2D flying robot that translates in an environment with three degrees of freedom (3 DOF). The robot can move to a target position at a specified maximum velocity, assuming infinite acceleration and no system delays.
 
-to make the robot move toward the target point we have planned a trajectory with 5th order polynominal time series (Read Lynch Modern Robotics for more details)  
+To make the robot move toward the target point, we have planned a trajectory with a 5th-order polynomial time series (Read Lynch's Modern Robotics for more details). 
 
 ## Robot Class Functionalities
 
