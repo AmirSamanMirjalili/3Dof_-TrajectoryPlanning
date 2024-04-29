@@ -62,7 +62,20 @@ These methods collectively enable the simulation of a robot moving in a 2D space
     make
     ```
    This will generate the executable in the `build` directory.
+2. **Testing Framework
+**
+The project uses Google Test, a widely used C++ testing framework, to ensure the functionality of the `Robot` class and associated methods. The tests cover initialization, position updates, and trajectory calculations to verify that the robot behaves as expected under various conditions.
 
+### How to Run the Tests
+
+since the project has Google Test submodlues libraries to run the tests you dont need to install it, Here's how you can compile and run the tests:
+
+1. **Compile the Tests**:
+   Navigate to your build directory and run CMake with the test option enabled:
+   ```bash
+   # Assuming you have already compiled the cmake project
+   ctest
+   ```
 ## Code Structure
 
 - `main.cpp`: Handles user interactions and simulation loop.
