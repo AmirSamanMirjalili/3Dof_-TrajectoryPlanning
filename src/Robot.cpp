@@ -84,12 +84,15 @@ Vec3 Robot::trajectoryPlanning(double time)
 
 void Robot::updatePosition () {
 
+    // Calculate the total time of the simulation
     computeMinimumTime();
+    // Calculate the coefficients of the quantic polynomial
     calculateQuanticCoeffs();
 
     // Calculate the number of steps
-    int nSteps = static_cast<int>(ceil(totalTime / timeStep));
+    int nSteps = static_cast<int>(ceil(totalTime / timeStep))+1;
 
+    // Loop through each step
     for (int i = 0; i < nSteps; i++) {
         // Calculate the time at each step
         double time = i * timeStep;
