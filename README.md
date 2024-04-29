@@ -73,6 +73,7 @@ since the project has Google Test submodlues libraries to run the tests you dont
    Navigate to your build directory and run CMake with the test option enabled:
    ```bash
    # Assuming you have already compiled the cmake project
+   cd build
    ctest
    ```
 ## Code Structure
