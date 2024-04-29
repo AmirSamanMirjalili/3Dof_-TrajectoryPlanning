@@ -20,6 +20,8 @@ struct Vec3 {
     // Scalar multiplication
     Vec3 operator*(double scalar) const;
 
+    friend Vec3 operator*(double scalar, const Vec3& vec);
+
     // Dot product
     double dot(const Vec3& other) const;
 

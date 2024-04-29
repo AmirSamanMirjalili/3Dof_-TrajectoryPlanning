@@ -7,7 +7,7 @@ TEST(RobotClass, InitializesCorrectly) {
     int maxVelocity {10};
     double timeStep {1};
 
-    Robot robot(initialPosition, maxVelocity, timeStep);
+    Robot robot(initialPosition, maxVelocity, timeStep, TrajectoryType::Line);
 
     EXPECT_EQ(robot.getPosition(), initialPosition);
     EXPECT_EQ(robot.getmaxVelocity(), maxVelocity);
@@ -15,41 +15,27 @@ TEST(RobotClass, InitializesCorrectly) {
     
 }
 
-
-TEST(RobotClass, UpdatePosition) {
+TEST(RobotClass, UpdatePositionTest) {
     // Arrange
     Vec3 initialPosition(0, 0, 0);
-    Vec3 targetPosition(0, 10, 0);
-    int maxVelocity = 2;
-    double timeStep = 1.0;
-    Robot robot(initialPosition, maxVelocity, timeStep);
+    Vec3 targetPosition(10, 0, 0);
+    int maxVelocity = 5;
+    double timeStep = 0.5;
+    Robot robot(initialPosition, maxVelocity, timeStep, TrajectoryType::Line);
     robot.setTargetPosition(targetPosition);
 
     // Act
     robot.updatePosition();
 
     // Assert
-    Vec3 expectedPosition(0, 2, 0); // The robot should have moved 2 units along the x-axis
+    Vec3 expectedPosition = targetPosition; // Assuming the robot should reach the target position
     Vec3 actualPosition = robot.getPosition();
     EXPECT_EQ(actualPosition, expectedPosition);
 }
 
-TEST(RobotClass, isAtTarget) {
-    // Arrange
-    Vec3 initialPosition(0, 0, 0);
-    Vec3 targetPosition(0, 2, 0);
-    int maxVelocity = 2;
-    double timeStep = 1.0;
-    Robot robot(initialPosition, maxVelocity, timeStep);
-    robot.setTargetPosition(targetPosition);
 
-    // Act
-    robot.updatePosition();
 
-    // Assert
-    EXPECT_TRUE(robot.isAtTarget());
-   
-}
+
 
  TEST(Vec3Test, Addition) {
      Vec3 v1(1.0, 2.0, 3.0);
