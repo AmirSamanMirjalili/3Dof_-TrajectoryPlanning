@@ -31,8 +31,9 @@ public:
     void computeMinimumTime();
     void calculateQuanticCoeffs();
     void updatePosition();
+    double accuracyCheck();
     bool isAtTarget() ;
-    void printPosition() const;
+
 
 
 private:
@@ -51,6 +52,8 @@ private:
     //private methods
     double calcMotionLaw(double time);
     Vec3 trajectoryPlanning(double time);
+    void printPosition(double time) const;
+
    
     
 };

@@ -84,28 +84,69 @@ Vec3 Robot::trajectoryPlanning(double time)
 
 void Robot::updatePosition () {
 
+    // Check if the robot is already at the target
+
+    if (isAtTarget()) {
+        return;
+    }
+
     // Calculate the total time of the simulation
     computeMinimumTime();
     // Calculate the coefficients of the quantic polynomial
     calculateQuanticCoeffs();
 
     // Calculate the number of steps
-    int nSteps = static_cast<int>(ceil(totalTime / timeStep))+1;
+    int nSteps = static_cast<int>(round(totalTime / timeStep));
 
     // Loop through each step
-    for (int i = 0; i < nSteps; i++) {
+    for (int i = 0; i <= nSteps; i++) {
         // Calculate the time at each step
         double time = i * timeStep;
         // Calculate the position of the robot at each step
         position = trajectoryPlanning(time);
+        // Print the position of the robot at each step
+        printPosition(time);
     }
 
 }
 
 
-void Robot::printPosition() const {
+void Robot::printPosition(double time) const {
 
+    //printing position with corresponding time side by side
+    std::cout << "Time: " << time << " ";
     std::cout << "Robot Position: " << position << std::endl;
+}
+
+double Robot::accuracyCheck(){
+
+    //threshold for the error=lastposition-targetposition
+    double epsilon = {1e-6};
+
+    computeMinimumTime();
+    calculateQuanticCoeffs();
+
+    int lastIndex = static_cast<int>(ceil(totalTime / timeStep))-1;
+
+    double time=lastIndex*timeStep;
+
+    // Calculate the position of the robot at the last step
+    Vec3 approxPosition = trajectoryPlanning(time);
+
+    Vec3 error= targetPosition - approxPosition;
+
+    //print that for this time step the error is and the robot will stop at approxPosition
+    if(error.magnitude()>epsilon){
+        std::cout<<"For time step: "<<timeStep<<" the position error is: "<<error.magnitude()<<" and the robot stopped at: "<<approxPosition<<std::endl;
+        //suggest considering a smaller time step to have a more accurate result
+        std::cout<<"use smaller time step to have a more accurate result"<<std::endl;
+    }
+
+
+
+
+    return error.magnitude();
+
 }
 
 bool Robot::isAtTarget()  {

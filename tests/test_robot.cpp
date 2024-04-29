@@ -18,9 +18,9 @@ TEST(RobotClass, InitializesCorrectly) {
 TEST(RobotClass, UpdatePositionTest) {
     // Arrange
     Vec3 initialPosition(0, 0, 0);
-    Vec3 targetPosition(10, 0, 0);
+    Vec3 targetPosition(10, 20, 3);
     int maxVelocity = 5;
-    double timeStep = 0.5;
+    double timeStep = 0.7;
     Robot robot(initialPosition, maxVelocity, timeStep, TrajectoryType::Line);
     robot.setTargetPosition(targetPosition);
 
