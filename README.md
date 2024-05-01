@@ -7,7 +7,15 @@ This project simulates a simple flying robot that translates in an environment w
 
 To make the robot move toward the target point, we have planned a trajectory with a 5th-order polynomial time series (Read Lynch's Modern Robotics for more details). 
 
-## Robot Class Functionalities
+## Code Structure
+
+- `main.cpp`: Handles user interactions and simulation loop.
+- `Robot.cpp`: this class Defines the robot's behaviors and simulation mechanics.
+- `Vec3.cpp`: Implements a simple 3D vector class used for vector based calculations.
+- `test_robot.cpp`:implemented Google tests to make sure 
+the functions and classes work as expected
+
+## Robot.cpp Class Functionalities
 
 The `Robot` class is designed to simulate the movement of a robot towards a target position using a specific trajectory planning method. Below is a detailed explanation of each method within the `Robot` class:
 
@@ -76,14 +84,7 @@ since the project has Google Test submodlues libraries to run the tests you dont
    cd build
    ctest
    ```
-## Code Structure
-
-- `main.cpp`: Handles user interactions and simulation loop.
-- `Robot.cpp`: Defines the robot's behaviors and simulation mechanics.
-- `Vec3.cpp`: Implements a simple 3D vector class used for vector based calculations.
-- `test_robot.cpp`:implemented Google tests to make sure 
-the functions and classes work as expected
-
+   
 ## Future Enhancements
 
 - **3D Visualization**: Implement a graphical interface to visualize the robot's movement.
